@@ -1,3 +1,54 @@
-img {
-    width: 200px;
+
+body {
+    text-align: center;
+    font-family: "Arial";
+    background-color: #040F16;
 }
+
+p {
+    font-size: 15px;
+    color: #0094C6;
+}
+
+img {
+    height: 250px;
+    border: 3px solid #0094C6;
+    border-style: inset;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    margin: 10px;
+}
+
+@keyframes rise {
+    from {box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5)}
+    to {box-shadow: 0 10px 10px rgba(255, 255, 255, 0.3)}
+}
+
+img:hover {
+    animation-duration: 0.5s;
+    animation-name: rise;
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.3)
+    
+}
+
+#member {
+    margin-bottom: 25px;
+}
+
+#japaneseSentence {
+    font-family: "Mplus 1c";
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#header {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-color: #001242;
+    color: #005E7C;
+    padding-top: 6px;
+    padding-bottom: 1px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* #000022, #001242, #0094C6, #005E7C, #040F16 */
