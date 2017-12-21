@@ -3,9 +3,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="script.js"></script>
+        <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     </head>
     <body>
+        <div id="header">
         <h1>PukekoKiwi</h1>
+        </div>
         <p id="member">A member of Hack Club</p>
         
         <div>
@@ -16,5 +21,35 @@
     
         <p>Trying to improve his programming skills!</p>
         <p>I'm learning Japanese!</p>
+        
+        <div id='tabs'>
+            <button class="tablinks" onclick="openInfo(event, 'About')">About Me</button>
+            <button class="tablinks" onclick="openInfo(event, 'Programming')">Programming Experience</button>
+            <button class="tablinks" onclick="openInfo(event, 'Social')">Social Media</button>
+            <button class="tablinks" onclick="openInfo(event, 'Japanese')">Japanese</button>
+        </div>
+        
+        <div id="London" class="tabcontent">
+            <h1>About Me</h1>
+            <p>I lived in Rhode Island as a kid, and moved to NJ as a teen, and ended up in this club</p>
+        </div>
+
+        <div id="Programming" class="tabcontent">
+            <h1>Programming Experience</h1>
+            <p>I started at about age 12, introduced by KhanAcademy's coding lessons.</p> 
+        </div>
+
+        <div id="Social" class="tabcontent">
+            <h1>My Social Media</h1>
+            <p>I don't have much social media, but I do I have</p>
+            <a href='https://www.youtube.com/user/PukekoKiwi'>A Youtube Channel (I make weird remixes)</a>
+            <br>
+            <a href='https://scratch.mit.edu/users/PukekoKiwi/'>A Scratch Account (I don't use much)</a>
+        </div>
+        
+        <div id="Japanese" class="tabcontent">
+            <h1>Japanese</h1>
+            <p>I'm actually studying japanese! </p>
+        </div>
     </body>
 </html>
