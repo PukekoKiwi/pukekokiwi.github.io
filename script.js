@@ -1,7 +1,7 @@
 function openTab(evt, tabName) {
 
     var i, tabcontent, tablinks;
-
+    
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -16,4 +16,4 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-//openTab('event', 'About');
+window.onload = openTab(event, 'About');
