@@ -2,18 +2,21 @@
 
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="styles.css" />
         <script type="text/javascript" src="script.js"></script>
         <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     </head>
     <body>
-        <script>
-            openTab('event', 'About');
+        <script type="text/javascript">
+        window.onload = openTab(event, "About");
         </script>
+        
         <div id="header">
         <h1>PukekoKiwi</h1>
         </div>
+        
         <p id="member">A member of Hack Club</p>
         
         <div>
@@ -83,12 +86,19 @@
                 <li>"Why is it the same sounds with two different kana?"</li>
                 <p>Katakana is actually the script used for foreign imported words, to help differentiate them!</p>
                 <li>"Why do some kana not sound as depicted?"</li>
-                <p>¯\_( ´･ω･)_/¯ Probably phonological reasons, and making it easier to speak</p>
-                <li>"Why are 'wi' and 'we' featured, if they aren't actually used?"</li>
+                <p>( - w  -) dunno really. Probably phonological reasons, and making it easier to speak</p>
+                <li>"Why are 'ゐ/ヰ' and 'ゑ/ヱ' featured, if they aren't actually used?"</li>
                 <p>They are no longer really "standard" kana anymore, even though they made it into unicode.
                 They sometimes do appear in band or artist names to be a bit quirky, like
-                the "Yebisu" beer brand.</p>
+                the ヱビス/Yebisu beer brand.</p>
             </ul>
+            
+            <h3>Kanji</h3>
+            
+            <p>Kanji appear mostly in things like nouns, adjectives, and verbs.
+            Most of them have two different pronunciations; On-yomi and Kun-yomi.
+            On-yomi is the best attempt at Japanese people copying the Chinese pronunciation
+            in kana.</p>
         </div>
         
     </body>
