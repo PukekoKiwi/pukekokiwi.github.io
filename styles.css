@@ -4,6 +4,12 @@ body {
     font-family: "Arial";
     background-color: #040F16;
 }
+::selection {
+    background: rgba(20, 60, 250, 0.3);
+}
+::-moz-selection {
+    background: rgba(20, 60, 250, 0.3);
+}
 
 p {
     font-size: 15px;
@@ -31,6 +37,15 @@ img:hover {
 }
 
 a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:visited {
+    color: chocolate;
+}
+
+a:hover {
     color: lightblue;
 }
 
@@ -74,9 +89,21 @@ a {
 .kanaTables {
     background-color: lightblue;
     content: center;
-    padding: 2px;
+    padding: 0px;
     overflow: inherit;
+    width: 400px;
+    height:250px;
 }
 
+.jptext {
+    font-family: "Rounded Mplus 1c"; 
+    font-weight: normal;
+    font-size: 105%
+}
+
+#jpExamples {
+    border: 3px solid #0094C6;
+    padding: 0px 14px 0px 14px;
+}
 
 /* #000022, #001242, #0094C6, #001242, #001242 */
