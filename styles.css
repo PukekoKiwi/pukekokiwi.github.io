@@ -40,6 +40,7 @@ img:hover {
 a {
     color: orange;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:visited {
@@ -50,6 +51,84 @@ a:hover {
     color: lightblue;
 }
 
+#content {
+    display: none;
+}
+
+#loadScreen {
+    display: block;
+    z-index: 100;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000022;
+}
+
+#loadingCircles {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#loadingCircles li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 40%, 100% {
+        transform: scale(0.2);
+    }
+    20% {
+        transform: scale(1);
+    }
+}
+
+#loadingCircles li:nth-child(1){
+    animation-delay: -1.4s;
+    background: #0094C6;
+    box-shadow: 0 0 50px #0094C6;
+}
+#loadingCircles li:nth-child(2){
+    animation-delay: -1.2s;
+    background: orange;
+    box-shadow: 0 0 50px orange;
+}
+#loadingCircles li:nth-child(3){
+    animation-delay: -1s;
+    background: #0094C6;
+    box-shadow: 0 0 50px #0094C6;
+}
+#loadingCircles li:nth-child(4){
+    animation-delay: -0.8s;
+    background: orange;
+    box-shadow: 0 0 50px orange;
+}
+#loadingCircles li:nth-child(5){
+    animation-delay: -0.6s;
+    background: #0094C6;
+    box-shadow: 0 0 50px #0094C6;
+}
+#loadingCircles li:nth-child(6){
+    animation-delay: -0.4s;
+    background: orange;
+    box-shadow: 0 0 50px orange;
+}
+#loadingCircles li:nth-child(7){
+    animation-delay: -0.2s;
+    background: #0094C6;
+    box-shadow: 0 0 50px #0094C6;
+}
+
 #member {
     margin-bottom: 25px;
 }
@@ -58,7 +137,7 @@ a:hover {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     background-color: #001242;
-    color: #0094C6;
+    color: orange;
     padding: 6px 50px 1px 50px;
 }
 
@@ -106,6 +185,15 @@ a:hover {
 #jpExamples {
     border: 3px solid #0094C6;
     padding: 0px 14px 0px 14px;
+}
+
+hr {
+    border-color: #0094C6;
+}
+
+.ytVideo {
+    width: 400px;
+    height: 220px;
 }
 
 /* #000022, #001242, #0094C6, #001242, #001242 */

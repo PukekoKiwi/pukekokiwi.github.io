@@ -10,13 +10,31 @@
         <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     </head>
     
-    <body onload="openTab(event, 'About');">
+    <body onload="openTab(event, 'About'), setTimeout(showContent, 1200);">
         
+        <div id="loadScreen">
+            
+            <ul id="loadingCircles">
+            
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            
+            </ul>
+            
+        </div>
+        
+    <div id="content">  
+    
         <div id="header">
         <h1>PukekoKiwi</h1>
         </div>
         
-        <p id="member">A member of Hack Club</p>
+        <p id="member">A member of <a href="https://hackclub.com/">Hack Club</a></p>
         
         <div>
             <img src="https://i.imgur.com/O1OoaZO.jpg" title="I take a photography class, and my friend took this photo!"/>
@@ -30,6 +48,7 @@
         <div>
             <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
             <button class="tablinks" onclick="openTab(event, 'Programming')">Programming Experience</button>
+            <button class="tablinks" onclick="openTab(event, 'VideoEditing')">Video Editing</button>
             <button class="tablinks" onclick="openTab(event, 'Social')">Social Media</button>
             <button class="tablinks" onclick="openTab(event, 'Bilingualism')">Bilingualism</button>
         </div>
@@ -56,6 +75,20 @@
                 I currently don't have any official achievements or documentation of coding expertise, as an
                 adolescent who has recently found out about it, but once I graduate the CSSE academy, I'll have an official
                 statement od completion!</p> 
+            </div>
+            
+            <div id="VideoEditing" class="tabcontent">
+                <h1>Video Editing</h1>
+                <p>I'm not the best video editor, but I definitely do have a few tricks up my sleeve. Most of the video edits
+                I do are up on youtube right now, in the form of Sparta Remixes or YTPMVs. (They still exist)</p>
+                <p>I do have some other, non-music related videos, such as some videos I made when in the Carribean 
+                (See <a onclick="openTab(event, 'About')">"About Me"</a>)
+                documenting our trips in a somewhat neat video. Also, down below is a video I edited in 8th
+                grade for health class, where we tried to advertise a cool new product we made.</p>
+                
+                <iframe class="ytVideo"
+                    src="https://www.youtube.com/embed/lZWN207zkDo">
+                </iframe>
             </div>
 
             <div id="Social" class="tabcontent">
@@ -155,5 +188,6 @@
                 on the Japanese language!</p>
         
         </div>
+    </div>
     </body>
 </html>

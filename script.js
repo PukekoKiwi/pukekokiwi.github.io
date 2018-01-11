@@ -1,3 +1,13 @@
+function showContent() {
+    var content = document.getElementById("content");
+    var loader = document.getElementById("loadScreen");
+    var screenHight = window.innerHeight;
+    
+    content.style.display = "block";
+    window.scrollTo(0, screenHight);
+    loader.style.display = "none";
+}
+
 function openTab(evt, tabName) {
 
     var i, tabcontent, tablinks;
