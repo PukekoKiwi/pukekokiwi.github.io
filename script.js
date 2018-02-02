@@ -25,3 +25,24 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+var langSwitch = 0; //En = 0, Jp = 1
+
+function changeLang() {
+    var langButton = document.getElementById("switchLanguage");
+    var engBilin = document.getElementById("englishBilingualism");
+    var japBilin = document.getElementById("japaneseBilingualism");
+    
+    if (langSwitch === 0) {
+        langSwitch = 1;
+        engBilin.style.display = "none";
+        japBilin.style.display = "block";
+        langButton.innerHTML = "A";
+    } else {
+        langSwitch = 0;
+        japBilin.style.display = "none";
+        engBilin.style.display = "block";
+        langButton.innerHTML = "あ";
+    }
+    
+}

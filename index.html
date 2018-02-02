@@ -34,7 +34,7 @@
         <h1>PukekoKiwi</h1>
         </div>
         
-        <p id="member">A member of <a href="https://hackclub.com/">Hack Club</a></p>
+        <p id="member">[A member of <a href="https://hackclub.com/">Hack Club</a>]</p>
         
         <div>
             <img src="https://i.imgur.com/O1OoaZO.jpg" title="I take a photography class, and my friend took this photo!"/>
@@ -42,7 +42,7 @@
             <img src="https://i.imgur.com/invlq7h.jpg" title="Another moment from photography class, used photoshop here"/>
         </div>
     
-        <p>Trying to improve his programming skills!</p>
+        <p>I'm trying to improve his programming skills!</p>
         <p>⬇ Click the tabs for more info! ⬇</p>
         
         <div>
@@ -65,7 +65,8 @@
                 club, and henceforth, hack club! I want to pursue computer science and programming, and hopefully obtain
                 a job in video game development, software development, web design, or IT.</p>
                 
-                <h2></h2>
+                <p>No. It's not puke ko kiwi. It's two words, pukeko and kiwi. (They're both birds
+                native to New Zealand)</p>
             </div>
 
             <div id="Programming" class="tabcontent">
@@ -107,86 +108,171 @@
         
             <div id="Bilingualism" class="tabcontent">
                 <h1>Bilingualism</h1>
-            
-                <p>Languages have greatly interested me, and I've played around with a few
-            languages mainly taught at school, like French and Spanish. After a bit, my
-            friend, who is into anime (Japanese animation) introduces me to Japanese culture.
-            The language promptly caught my eye, and we decided to study Japanese together!
-            So far, I'm not extremely skilled, but I can pass the JLPT N5, (A Japanese proficiency
-            test) and have learned just enough kanji (Japanese logographs) to pass JLPT N4.</p>
-            
-                <h2>The Basics of Japanese</h2>
-            
-                <p>To start it simply, Japanese is the native language of Japan.
-            The language today has 3 scripts. Hiragana, Katakana, and Kanji.
-            Hiragana and Katakana are "Kana", which are symbols which represent the
-            syllables and sounds in the Japanese language. Kanji are the logographs
-            taken from the Chinese language and adapted to Japanese to represent
-            items, ideas, or concepts.</p>
-            
-                <h3>Kana</h3>
-            
-                <p>As mentioned above, Kana represents the sounds of Japanese. Down below is a
-            helpful chart to easily represent the sounds</p>
-            
-                <img class='kanaTables' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/2000px-Table_hiragana.svg.png"/>
-                <img class='kanaTables' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Table_katakana.svg/2000px-Table_katakana.svg.png"/>
-            
-                <p>Some questions you might have:</p>
-            
-                <ul>
-                    <li>"Why is it the same sounds with two different kana?"</li>
-                        <p>Katakana is actually the script used for foreign imported words, to help differentiate them!</p>
-                    <li>"Why do some kana not sound as depicted?"</li>
-                        <p>( - w  -) dunno really. Probably phonological reasons, and making it easier to speak</p>
-                    <li>"Why are '<b class="jptext">ゐ/ヰ</b>' and '<b class="jptext">ゑ/ヱ</b>' featured, if they aren't actually used?"</li>
-                        <p>They are no longer really "standard" kana anymore, even though they made it into unicode.
-                    They sometimes do appear in band or artist names to be a bit quirky, like
-                    the <b class="jptext">ヱビス</b>/Yebisu beer brand.</p>
-                    <li>"<b class="jptext">ん/ン</b>?"</li>
-                        <p>It's just an exception I guess, it also helps create more possibilities for words.
-                    (Also, no word starts with <b class="jptext">ん</b>... just about)</p>
-                </ul>
-            
-                <h3>Kanji</h3>
-            
-                <p>Kanji appear mostly in things like nouns, adjectives, and verbs.
-            Most of them have two different pronunciations; On-yomi/<b class="jptext">音読み</b> 
-            and Kun-yomi/<b class="jptext">訓読み</b>. On-yomi is the best attempt at Japanese people copying the Chinese pronunciation
-            in kana, and Kun-yomi is the original Japanese word for the concept. It's a bit
-            confusing at first, but it will get easier to understand with time.</p>
-                <p>Kanji are consisted of things called radicals (<b class="jptext">部首</b>), which are like
-                pieces, that are combined to form kanji. Some hint to the overall meaning,
-                while some just aid in understanding the prounciation.</p>
                 
-                <div id="jpExamples">
-                    <h4>Examples:</h4>
+                <button id="switchLanguage" title="Change the language of this section" onclick="changeLang();"><b class="jptext">あ</b></button>
                 
-                    <p><b class="jptext">木 (tree) + 木 + 木 = 森 (forest)
+                    <div id="englishBilingualism">
                     
-                    <br>
+                    <p>Languages have greatly interested me, and I've played around with a few
+                languages mainly taught at school, like French and Spanish. After a bit, my
+                friend, who is into anime (Japanese animation) introduces me to Japanese culture.
+                The language promptly caught my eye, and we decided to study Japanese together!
+                So far, I'm not extremely skilled, but I can pass the JLPT N5, (A Japanese proficiency
+                test) and have learned just enough kanji (Japanese logographs) to pass JLPT N4.</p>
+            
+                    <h2>The Basics of Japanese</h2>
+            
+                    <p>To start it simply, Japanese is the native language of Japan.
+                The language today has 3 scripts. Hiragana, Katakana, and Kanji.
+                Hiragana and Katakana are "Kana", which are symbols which represent the
+                syllables and sounds in the Japanese language. Kanji are the logographs
+                taken from the Chinese language and adapted to Japanese to represent
+                items, ideas, or concepts.</p>
+            
+                    <h3>Kana</h3>
+                
+                    <p>As mentioned above, Kana represents the sounds of Japanese. Down below is a
+                helpful chart to easily represent the sounds</p>
+            
+                    <img class='kanaTables' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/2000px-Table_hiragana.svg.png"/>
+                    <img class='kanaTables' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Table_katakana.svg/2000px-Table_katakana.svg.png"/>
+            
+                    <p>Some questions you might have:</p>
+            
+                    <ul>
+                        <li>"Why is it the same sounds with two different kana?"</li>
+                            <p>Katakana is actually the script used for foreign imported words, to help differentiate them!</p>
+                        <li>"Why do some kana not sound as depicted?"</li>
+                            <p>( - w  -) dunno really. Probably phonological reasons, and making it easier to speak</p>
+                        <li>"Why are '<b class="jptext">ゐ/ヰ</b>' and '<b class="jptext">ゑ/ヱ</b>' featured, if they aren't actually used?"</li>
+                            <p>They are no longer really "standard" kana anymore, even though they made it into unicode.
+                        They sometimes do appear in band or artist names to be a bit quirky, like
+                        the <b class="jptext">ヱビス</b>/Yebisu beer brand.</p>
+                        <li>"<b class="jptext">ん/ン</b>?"</li>
+                            <p>It's just an exception I guess, it also helps create more possibilities for words.
+                        (Also, no word starts with <b class="jptext">ん</b>... just about)</p>
+                    </ul>
+            
+                    <h3>Kanji</h3>
+            
+                    <p>Kanji appear mostly in things like nouns, adjectives, and verbs.
+                    Most of them have two different pronunciations; On-yomi/<b class="jptext">音読み</b> 
+                    and Kun-yomi/<b class="jptext">訓読み</b>. On-yomi is the best attempt at Japanese people copying the Chinese pronunciation
+                    in kana, and Kun-yomi is the original Japanese word for the concept. It's a bit
+                    confusing at first, but it will get easier to understand with time.</p>
+                    <p>Kanji are consisted of things called radicals (<b class="jptext">部首</b>), which are like
+                    pieces, that are combined to form kanji. Some hint to the overall meaning,
+                    while some just aid in understanding the prounciation.</p>
+                
+                    <div id="jpExamples">
+                        <h4>Examples:</h4>
+                
+                        <p><b class="jptext">木 (tree) + 木 + 木 = 森 (forest)
                     
-                    子 (child) + 女 (woman) = 好 (fond of, to like)
-                    <hr id="break">
-                    版, 坂, 阪, 飯, 板 are all pronounced はん, and all contain 反 on the left!
-                    </b></p>
+                        <br>
+                    
+                        子 (child) + 女 (woman) = 好 (fond of, to like)
+                        <hr id="break">
+                        版, 坂, 阪, 飯, 板 are all pronounced はん, and all contain 反 on the left!
+                        </b></p>
+                    </div>
+                
+                    <p>All together, they can make a sentence like,</p>
+                    <p><b class="jptext">僕はコーヒーを好きです</b> (I like coffee)
+                    or <b class="jptext">このウェブサイトはかっこいいです</b> (This website is cool)</p>
+                
+                    <p>To be honest, I just barely scratched the surface  ┐(°﹃°)┌, there are other things like
+                    diagraphs, dakuten and handakutens, sentence structure, verbs and not to mention the countless amount of kanji you have to learned
+                    for normal conversation (2136 acording to the jōyō kanji list).
+                    
+                    <p>All in all, it would look daunting to any person who didn't speak an asian language already, but
+                    I decided to crack it open and grind through the Kanji like no other! (With help from sites like
+                    <a href="https://www.wanikani.com/">WaniKani</a> and <a href="https://www.memrise.com/">Memrise</a>!)</p>
+                
+                    <p>For more information, check out the<a href="https://en.wikipedia.org/wiki/Japanese_language"> Wikipedia article</a>
+                    on the Japanese language!</p>
+                    </div>
+                
+                    <div id="japaneseBilingualism">
+                    
+                        <b><p>僕には言語を面白いです。学校で少しスペイン語とフランス語を学びました。
+                中学2年生、僕の友達(彼女はアニメが好きです)は僕に日本語と日本文化の手ほどきをしてくれた。
+                日本語を好きになり始めました、だから僕たちは一緒に独学でした。
+                最近、少しは上達してきた気がするんだけど (どうでしょう？)</p>
+            
+                    <h2>一通りの日本語</h2>
+            
+                    <p>まず、日本語は日本の母国語.
+                ひらがなとカタカナと漢字がある。ひらがなとカタカナとは「かな」です。
+                かなは日本語の物音を表します。漢字は中国語的の表語文字。
+                考えと物を表します。</p>
+                
+                    <h3>かな</h3>
+            
+                    <p>上述、 かなは日本語の物音を表します。下にかなの図表です。</p>
+                
+                    <img class='kanaTables' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/2000px-Table_hiragana.svg.png"/>
+                    <img class='kanaTables' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Table_katakana.svg/2000px-Table_katakana.svg.png"/>
+            
+                    <p>質問と答え：</p>
+            
+                    <ul>
+                        <li>"Why is it the same sounds with two different kana?"</li>
+                            <p>Katakana is actually the script used for foreign imported words, to help differentiate them!</p>
+                        <li>"Why do some kana not sound as depicted?"</li>
+                            <p>( - w  -) dunno really. Probably phonological reasons, and making it easier to speak</p>
+                        <li>"Why are '<b class="jptext">ゐ/ヰ</b>' and '<b class="jptext">ゑ/ヱ</b>' featured, if they aren't actually used?"</li>
+                            <p>They are no longer really "standard" kana anymore, even though they made it into unicode.
+                        They sometimes do appear in band or artist names to be a bit quirky, like
+                        the <b class="jptext">ヱビス</b>/Yebisu beer brand.</p>
+                        <li>"<b class="jptext">ん/ン</b>?"</li>
+                            <p>It's just an exception I guess, it also helps create more possibilities for words.
+                        (Also, no word starts with <b class="jptext">ん</b>... just about)</p>
+                    </ul>
+                
+                    <h3>Kanji</h3>
+            
+                    <p>Kanji appear mostly in things like nouns, adjectives, and verbs.
+                Most of them have two different pronunciations; On-yomi/<b class="jptext">音読み</b> 
+                and Kun-yomi/<b class="jptext">訓読み</b>. On-yomi is the best attempt at Japanese people copying the Chinese pronunciation
+                in kana, and Kun-yomi is the original Japanese word for the concept. It's a bit
+                confusing at first, but it will get easier to understand with time.</p>
+                    <p>Kanji are consisted of things called radicals (<b class="jptext">部首</b>), which are like
+                    pieces, that are combined to form kanji. Some hint to the overall meaning,
+                    while some just aid in understanding the prounciation.</p>
+                
+                    <div id="jpExamples">
+                        <h4>Examples:</h4>
+                
+                        <p><b class="jptext">木 (tree) + 木 + 木 = 森 (forest)
+                    
+                        <br>
+                    
+                        子 (child) + 女 (woman) = 好 (fond of, to like)
+                        <hr id="break">
+                        版, 坂, 阪, 飯, 板 are all pronounced はん, and all contain 反 on the left!
+                        </b></p>
+                    </div>
+                
+                    <p>All together, they can make a sentence like,</p>
+                    <p><b class="jptext">僕はコーヒーを好きです</b> (I like coffee)
+                    or <b class="jptext">このウェブサイトはかっこいいです</b> (This website is cool)</p>
+                
+                    <p>To be honest, I just barely scratched the surface  ┐(°﹃°)┌, there are other things like
+                    diagraphs, dakuten and handakutens, sentence structure, verbs and not to mention the countless amount of kanji you have to learned
+                    for normal conversation (2136 acording to the jōyō kanji list).
+                    
+                    <p>All in all, it would look daunting to any person who didn't speak an asian language already, but
+                    I decided to crack it open and grind through the Kanji like no other! (With help from sites like
+                    <a href="https://www.wanikani.com/">WaniKani</a> and <a href="https://www.memrise.com/">Memrise</a>!)</p>
+                
+                    <p>For more information, check out the<a href="https://en.wikipedia.org/wiki/Japanese_language"> Wikipedia article</a>
+                    on the Japanese language!</p></b>
+                    
+                    </div>
+                    
                 </div>
                 
-                <p>All together, they can make a sentence like,</p>
-                <p><b class="jptext">僕はコーヒーを好きです</b> (I like coffee)
-                or <b class="jptext">このウェブサイトはかっこいいです</b> (This website is cool)</p>
-                
-                <p>To be honest, I just barely scratched the surface  ┐(°﹃°)┌, there are other things like
-                diagraphs, dakuten and handakutens, sentence structure, verbs and not to mention the countless amount of kanji you have to learned
-                for normal conversation (2136 acording to the jōyō kanji list).
-                
-                <p>All in all, it would look daunting to any person who didn't speak an asian language already, but
-                I decided to crack it open and grind through the Kanji like no other! (With help from sites like
-                <a href="https://www.wanikani.com/">WaniKani</a> and <a href="https://www.memrise.com/">Memrise</a>!)</p>
-                
-                <p>For more information, check out the<a href="https://en.wikipedia.org/wiki/Japanese_language"> Wikipedia article</a>
-                on the Japanese language!</p>
-        
         </div>
     </div>
     </body>

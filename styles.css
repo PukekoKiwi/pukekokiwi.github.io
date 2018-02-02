@@ -24,6 +24,7 @@ img {
     border-style: inset;
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
     margin: 10px;
+    transition: 0.5s;
 }
 
 @keyframes rise {
@@ -32,7 +33,7 @@ img {
 }
 
 img:hover {
-    animation-duration: 0.5s;
+    /*animation-duration: 0.5s;*/
     animation-name: rise;
     box-shadow: 0 10px 10px rgba(255, 255, 255, 0.3)
 }
@@ -41,6 +42,7 @@ a {
     color: orange;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 a:visited {
@@ -139,6 +141,14 @@ a:hover {
     background-color: #001242;
     color: orange;
     padding: 6px 50px 1px 50px;
+    text-shadow: 2px 2px 25px darkorange;
+    transition: 0.7s;
+}
+
+#header:hover {
+    /*transition: 0.7s;*/
+    color: #0094C6;
+    text-shadow: 2px 2px 25px turquoise;
 }
 
 .tablinks {
@@ -167,13 +177,41 @@ a:hover {
     padding: 10px 20px 20px 30px;
 }
 
+#switchLanguage {
+    background-color: #001242;
+    height: 37px;
+    width: 37px;
+    position: absolute;
+    right: 70px;
+    margin-top: -60px;
+    color: #0094C6;
+    font-size: 20px;
+    border: 2px outset #0094C6;
+    display: table-cell; 
+    vertical-align: middle;
+    cursor: pointer;
+}
+#switchLanguage:active {
+    border: 2px inset #0094C6;
+    background-color: #000A3A;
+    padding: 2px;
+}
+
+#englishBilingualism {
+    display: block;
+}
+
+#japaneseBilingualism {
+    display: none;
+}
+
 .kanaTables {
-    background-color: lightblue;
+    background-color: #97D0E3;
     content: center;
     padding: 0px;
-    overflow: inherit;
     width: 400px;
-    height:250px;
+    height: 250px;
+    overflow: hidden;
 }
 
 .jptext {
